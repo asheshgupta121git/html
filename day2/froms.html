@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in html</title>
+</head>
+<body>
+    <form action="/server">
+       <!-- username <input type="text" placeholder="enter username">
+        <br>
+       password <input type="password" placeholder="enter pass.">
+        <br>
+       age <input type="number" placeholder="enter age">
+        <br>
+        time <input type="time">
+        <br>
+        color <input type="color">
+        <br>
+        month <input type="month">
+        <br>
+        <button>submmit</button>
+        <h1>types of button</h1>
+         <button type="button">hello</button>
+         <button type="submmit">submmit</button>
+         <button type="reset">reset</button>
+         <input type="button" value="click me">
+         <input type="submit" value="submit">
+        <br><br><hr> -->
+         <h1>name attribute</h1>
+         <div> 
+         <label for="username">username : </label>
+         <input type="text" placeholder="enter username" id="username" name="username">
+         </div>
+         <div>
+            <label for="password">password  : </label>
+            <input type="password" placeholder="enter password" id="password" name="password">
+         </div>
+         <button>submit</button>
+
+
+    </form>
+    <br><hr>
+    <form action="https://www.youtube.com/results?">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+    </form>
+    <br><hr>
+    <form action="https://www.google.com/search?">
+        <input type="text" placeholder="search in google" name="q">
+        <button type="submit">search</button>
+    </form>
+    <br><hr>
+    <!-- check box in forms   -->
+     <form action="/server">
+        <input type="checkbox" name="age" id="age">
+        <label for="age">I am 18+</label>
+        <br>
+        <div>
+            choose your subject
+            <input type="checkbox" name="subject" id="maths" value="math">
+            <label for="math">math</label>
+            <input type="checkbox" name="subject" id="science" value="sci">
+            <label for="science">science</label>
+            <input type="checkbox" name="subject" id="english" value="eng">
+            <label for="english">english</label>
+        </div>
+        <br>
+
+        <!-- radio button  -->
+         <input type="radio" name="fruit" id="apple" value="apple">
+         <label for="apple">Apple</label>
+         <input type="radio" name="fruit" id="mango" value="mango">
+         <label for="mango">mango</label>
+         <input type="radio" name="fruit" id="guava" value="guava">
+         <label for="guava">guava</label>
+         <input type="radio" name="fruit" id="grapes" value="grapes">
+         <label for="grapes">grapes</label>
+
+
+         <br><hr>
+         <div>
+            dropdowns in html
+            <br>
+            <select name="profession" id="profession">
+                <option value="student">student</option>
+                <option value="teacher">teacher</option>
+                <option value="developer">developer</option>
+            </select>
+         </div>
+         <div>
+            <!-- range in input element  -->
+
+             <input type="range" min="0" max="100" name="vol" step="10" value="30">
+             <label for="vol">volume</label>
+         </div>
+         <br>
+         <!-- text area in html  -->
+          <div>
+            <label for="feedback">give feedback</label>
+            <textarea name="feedback" id="feedback" rows="5" cols="10" placeholder="feedback"></textarea>
+          </div>
+
+
+         <button>submit</button>
+     </form>
+     <form action="/server">
+        <h1>Registration form</h1>
+        <div>
+            <input type="text" placeholder="frist name" name="frist">
+            <label for="frist"></label>
+            <input type="text" placeholder="last name" name="last">
+            <label for="last"></label>
+            <br>
+            <label for="gender"> please select your gender</label>
+            <select name="gender" id="gender">
+                <option value="male">male</option>
+                <option value="female">femail</option>
+            </select>
+            <br>
+            Do you agree to all terms of services?
+            <input type="checkbox" name="check" id="check" value="yes">
+            <label for="check">yes, i agree</label>
+            <br>
+            <button value="submit">register</button>
+        </div>
+     </form>
+
+
+</body>
+</html>
